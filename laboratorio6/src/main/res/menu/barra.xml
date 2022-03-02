@@ -4,7 +4,8 @@
 
     <item
         android:id="@+id/Opcion1"
-        android:title="Like"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="EnviarMail"
         android:visible="true"
         app:showAsAction="ifRoom|withText" />
     <item

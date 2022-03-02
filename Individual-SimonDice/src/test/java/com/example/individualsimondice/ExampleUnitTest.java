@@ -1,4 +1,4 @@
-package com.example.proyectoindividual;
+package com.example.individualsimondice;
 
 import org.junit.Test;
 

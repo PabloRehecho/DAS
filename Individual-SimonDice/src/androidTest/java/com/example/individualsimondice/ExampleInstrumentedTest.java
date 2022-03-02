@@ -1,4 +1,4 @@
-package com.example.proyectoindividual;
+package com.example.individualsimondice;
 
 import android.content.Context;
 
