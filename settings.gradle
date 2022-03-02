@@ -1,0 +1,18 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "Laboratorio1"
+include ':app'
+include ':laboratorio2'
+include ':laboratorio3'
+include ':tema4'
+include ':tema5'
+include ':laboratorio4'
+include ':laboratorio5'
+include ':proyectoindividual'
+include ':laboratorio6'

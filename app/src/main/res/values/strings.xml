@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Laboratorio1</string>
+    <string name="Etiqueta1">Hola Mundo</string>
+    <string name="Etiqueta2">Mi nombre es Pablo</string>
+</resources>
