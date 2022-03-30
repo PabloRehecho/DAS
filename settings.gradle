@@ -8,12 +8,13 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Laboratorio1"
 include ':app'
+include ':laboratorio1'
 include ':laboratorio2'
-include ':laboratorio3'
 include ':tema4'
 include ':tema5'
+include ':laboratorio3'
 include ':laboratorio4'
-include ':laboratorio5'
 include ':Individual-SimonDice'
+include ':laboratorio5'
 include ':laboratorio6'
 include ':laboratorio7'
