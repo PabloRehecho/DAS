@@ -23,6 +23,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap)
     {
+
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
     }

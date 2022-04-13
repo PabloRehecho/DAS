@@ -1,6 +1,7 @@
 package com.example.conexionphp;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.work.Data;
@@ -30,7 +31,7 @@ public class ConexionPHP  extends Worker
     @Override
     public Result doWork()
     {
-        String direccion = "https://ec2-18-132-60-229.eu-west-2.compute.amazonaws.com/prehecho001/WEB/SelectAll.php";
+        String direccion = "http://ec2-18-132-60-229.eu-west-2.compute.amazonaws.com/prehecho001/WEB/SelectAll.php";
         HttpURLConnection urlConnection = null;
         try
         {
@@ -40,6 +41,7 @@ public class ConexionPHP  extends Worker
             urlConnection.setReadTimeout(5000);
 
             int statusCode = urlConnection.getResponseCode();
+            Log.i("php","statusCode: " + statusCode);
             if (statusCode == 200)
             {
                 BufferedInputStream inputStream = new BufferedInputStream(urlConnection.getInputStream());
@@ -58,6 +60,7 @@ public class ConexionPHP  extends Worker
                     lista.add(nombre);
                     lista.add(capital);
                 }
+                Log.i("php","listaJson: " + lista);
                 Data jason = new Data.Builder()
                         .putString("nombres",lista.toString())
                         .build();

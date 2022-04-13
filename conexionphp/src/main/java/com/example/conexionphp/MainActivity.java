@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickServidor (View v)
     {
-        OneTimeWorkRequest otwr = new OneTimeWorkRequest.Builder(ConexionPHP.class).build();
+        OneTimeWorkRequest otwr = new OneTimeWorkRequest.Builder(ConexionPHPInsert.class).build();
         WorkManager.getInstance(this).getWorkInfoByIdLiveData(otwr.getId())
                 .observe(this, new Observer<WorkInfo>() {
                     @Override
